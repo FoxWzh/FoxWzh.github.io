@@ -1,0 +1,206 @@
+---
+layout: none
+title: 训练集有图模式
+permalink: /training/with-images/
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>训练集筛选（有图片模式）</title>
+    <link rel="stylesheet" href="{{ '/assets/css/training.css' | relative_url }}" />
+  </head>
+  <body class="training-page">
+    <main class="training-shell">
+      <aside class="sidebar">
+        <section class="sidebar-section">
+          <h2>训练集筛选</h2>
+          <p>根据标签快速切换任务类型，保持模型风格一致。</p>
+          <div class="tag-group">
+            <span class="tag active">角色</span>
+            <span class="tag">风格</span>
+            <span class="tag">场景</span>
+            <span class="tag">动作</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag active">写真风</span>
+            <span class="tag">商业大片</span>
+            <span class="tag">胶片感</span>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>训练模型</h2>
+          <div class="model-list">
+            <article class="model-card">
+              <strong>flux1 krea dev</strong>
+              <span>角色塑形、皮肤纹理表现优秀</span>
+            </article>
+            <article class="model-card active">
+              <strong>infinity 2.0</strong>
+              <span>氛围表现佳，适合夜景及街拍场景</span>
+            </article>
+            <article class="model-card">
+              <strong>美术写实 v4</strong>
+              <span>偏写实，色调柔和</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>筛选参数</h2>
+          <div class="control-group">
+            <span class="control-chip">全部</span>
+            <span class="control-chip active">已筛选</span>
+            <span class="control-chip">有瑕疵</span>
+          </div>
+          <div class="control-group">
+            <span class="control-chip active">高清</span>
+            <span class="control-chip">普通</span>
+            <span class="control-chip">低清</span>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button class="secondary-button" type="button">导出结果</button>
+          <button class="primary-button" type="button">开始训练</button>
+        </div>
+      </aside>
+
+      <section class="training-main">
+        <header>
+          <div>
+            <h1>有图模式</h1>
+            <p class="subtitle">已筛选的图像会在此展示，可继续微调标签与质量分。</p>
+          </div>
+          <div class="training-actions">
+            <div class="grouped-buttons">
+              <button class="secondary-button" type="button">全部删除</button>
+              <button class="secondary-button" type="button">查看数据</button>
+              <button class="primary-button" type="button">上传图片</button>
+            </div>
+          </div>
+        </header>
+
+        <section class="training-gallery">
+          <article class="image-card" data-width="2048" data-height="3072">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="街拍角色" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>夜间街拍</strong>
+              <span>标签：城市 / 夜景 / 氛围感</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="1536" data-height="2048">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=70" alt="街拍角色" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>街头红砖</strong>
+              <span>标签：写真 / 复古 / 自然光</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="1024" data-height="1536">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="站立女性" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>城市白日</strong>
+              <span>标签：轻盈 / 夏日 / 街头</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="640" data-height="960">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=700&q=70" alt="低质量示例" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>素材待替换</strong>
+              <span>标签：模糊 / 待确认</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="1920" data-height="2560">
+            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=900&q=80" alt="室内写真" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>室内柔光</strong>
+              <span>标签：暖调 / 室内 / 写真</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="720" data-height="960">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=60" alt="偏低质量素材" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>低清待筛</strong>
+              <span>标签：低光 / 待提升</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="2048" data-height="3072">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="自然光肖像" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>自然光肖像</strong>
+              <span>标签：自然光 / 肖像 / 微笑</span>
+            </footer>
+          </article>
+          <article class="image-card" data-width="512" data-height="768">
+            <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=60" alt="低质量素材" />
+            <span class="image-resolution"></span>
+            <footer>
+              <strong>低质量样本</strong>
+              <span>标签：构图待优化</span>
+            </footer>
+          </article>
+        </section>
+
+        <section class="quality-panel">
+          <div class="rating-bars">
+            <span class="rating-label">BAD</span>
+            <div class="range-wrapper">
+              <input type="range" min="0" max="100" value="15" disabled />
+            </div>
+            <span class="rating-label">image count</span>
+            <div class="range-wrapper">
+              <input type="range" min="0" max="100" value="85" disabled />
+            </div>
+            <span class="rating-label">GOOD</span>
+            <div class="range-wrapper">
+              <input type="range" min="0" max="100" value="65" disabled />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>
+              image count
+              <input type="text" value="286" readonly />
+            </label>
+            <label>
+              average quality
+              <input type="text" value="8.6" readonly />
+            </label>
+            <label>
+              enter name
+              <input type="text" value="刘诗菲" />
+            </label>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        const QUALITY_THRESHOLD = 900;
+        document.querySelectorAll('.image-card').forEach((card) => {
+          const width = Number(card.dataset.width || 0);
+          const height = Number(card.dataset.height || 0);
+          const label = card.querySelector('.image-resolution');
+          if (!label) return;
+
+          const resolution = `${width} × ${height}`;
+          if (!width || !height || width < QUALITY_THRESHOLD || height < QUALITY_THRESHOLD) {
+            label.textContent = '低质量';
+            card.classList.add('low-quality');
+          } else {
+            label.textContent = resolution;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
