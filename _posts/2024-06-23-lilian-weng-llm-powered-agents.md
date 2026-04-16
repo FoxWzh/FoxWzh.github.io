@@ -1,6 +1,6 @@
 ---
 title: "【转载+解读】Lilian Weng：LLM 驱动的自主 Agent 系统全景"
-date: 2026-03-07 10:00:00 +0800
+date: 2024-06-23 10:00:00 +0800
 categories: [巨人肩膀, OpenAI]
 tags: ["Agent", "LLM", "规划", "记忆", "工具调用", "CoT", "ReAct", "Reflexion"]
 source_title: "LLM Powered Autonomous Agents"
