@@ -4,5 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+我叫 FOX，一个 AI 产品经理。
+
+什么都懂一点——设计懂一点，工程懂一点，模型懂一点，但都不如 AI 懂得多。所以博客里大部分内容，坦白说，是我和 AI 一起写的。这不是什么秘密，我觉得也没必要藏着掖着。
+
+我喜欢在 token 之海里乱逛。哪里有新模型、新论文、新产品，我就往哪里游。游完了写点东西，算是给自己留个记录，顺便分享给同样在漂的人。
+
+如果你也觉得 AI 这个浪头够大、够好玩，欢迎一起漂。
