@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM 前端能力横向测试</title>
+<style>
+:root{--bg:#0f1117;--surface:#1a1d27;--surface2:#22263a;--border:#2e3347;--text:#e2e8f0;--muted:#8892b0;--accent:#64ffda;--accent2:#7c6af7;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;}
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:20px 24px;}
+.header h1{font-size:20px;font-weight:700;color:var(--accent);margin-bottom:6px;}
+.header p{color:var(--muted);font-size:12px;}
+.conclusion{margin:16px 24px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:14px 18px;}
+.conclusion h3{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);margin-bottom:8px;}
+.conclusion p{font-size:13px;line-height:1.6;}
+.task-section{margin:20px 24px;}
+.task-header{background:var(--surface2);border:1px solid var(--border);border-radius:8px 8px 0 0;padding:12px 16px;}
+.task-header h2{font-size:14px;font-weight:700;color:var(--accent2);margin-bottom:6px;}
+.task-prompt{color:var(--muted);font-size:12px;line-height:1.6;}
+.prompt-img{margin-top:10px;max-height:120px;border-radius:4px;border:1px solid var(--border);cursor:pointer;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px;overflow:hidden;}
+.model-card{background:var(--surface);padding:10px;}
+.model-name{font-size:11px;font-weight:600;color:var(--accent2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.3px;}
+.model-img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;cursor:pointer;border:1px solid var(--border);transition:transform .15s;}
+.model-img:hover{transform:scale(1.02);}
+.no-img{width:100%;aspect-ratio:16/10;background:var(--surface2);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-align:center;padding:8px;}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:1000;align-items:center;justify-content:center;}
+.modal.show{display:flex;}
+.modal img{max-width:92vw;max-height:92vh;border-radius:8px;object-fit:contain;cursor:zoom-out;}
+.modal-close{position:absolute;top:16px;right:20px;color:white;font-size:28px;cursor:pointer;opacity:.7;}
+.modal-close:hover{opacity:1;}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>LLM 前端能力横向测试</h1>
+  <p>测试模型：Sonnet 4.5 / Gemini 3 Pro / Gemini 3 Flash / GPT5.2 / GPT5.1 CODEX MAX / minimax-m2.1 / glm-4.7 &nbsp;·&nbsp; 共 5 个任务</p>
+</div>
+<div class="conclusion">
+  <h3>综合结论</h3>
+  <p>效果排名：Gemini 3 Flash = Gemini 3 Pro &gt; GPT5.2 &gt; glm4.7 &gt; GPT5.1 CODEX MAX = Sonnet 4.5 &gt; minimax-m2.1</p>
+</div>
+<div class="task-section">
+  <div class="task-header">
+    <h2>粗野主义网站</h2>
+    <div class="task-prompt">创建一个突破创意界限的新粗野主义网站。包含流畅的滚动动画、鲜艳的色彩和 Tailwind ES 样式，并使其完全响应式。</div>
+  </div>
+  <div class="grid">
+    <div class="model-card"><div class="model-name">Sonnet 4.5</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/e79e333b/1c2b96fe777e4073866b2fef7b2f2bef.jpg" alt="Sonnet 4.5" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Pro</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Flash</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/86af7436/d2e2a310a9184d8e9b16ab3372930699.jpg" alt="Gemini 3 Flash" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">GPT5.2</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">GPT5.1 CODEX MAX</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/57be4d54/913b9359d4a1414e8d5dc590d14274cc.jpg" alt="GPT5.1 CODEX MAX" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">minimax-m2.1</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/6034af83/d369b4abb0b44bd58b408c2bf4f01683.jpg" alt="minimax-m2.1" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">glm-4.7</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/ba221d14/fb492f37d1364aba8dd8ee0ff0f24c12.jpg" alt="glm-4.7" loading="lazy" onclick="openModal(this.src)"></div>
+  </div>
+</div>
+<div class="task-section">
+  <div class="task-header">
+    <h2>复古像素风贪吃蛇</h2>
+    <div class="task-prompt">请创建一个符合复古像素风格和半调图案风格的贪吃蛇游戏，使用 HTML 和 JavaScript 实现。</div>
+  </div>
+  <div class="grid">
+    <div class="model-card"><div class="model-name">Sonnet 4.5</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/bb865ff0/b0046899602a4c1c878e8382c5a0185e.jpg" alt="Sonnet 4.5" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Pro</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/ae37ab19/a0bacca8fd414fb2a199ddfc2307bcc0.jpg" alt="Gemini 3 Pro" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Flash</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/73965e67/ace4919d0f9c4b2eb1b9757d829d8363.jpg" alt="Gemini 3 Flash" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">GPT5.2</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/e358efa0/518ff55f7ad1417f9843462c6de1b02f.jpg" alt="GPT5.2" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">GPT5.1 CODEX MAX</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/c4eedb56/41bc1b55f96a4a9885e866d7a117b343.jpg" alt="GPT5.1 CODEX MAX" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">minimax-m2.1</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/7402d133/37e8c135de034e8fb5d6338a34c71a61.jpg" alt="minimax-m2.1" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">glm-4.7</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/f1b93c18/d4bedc9ea3064052a2be139a9d400e69.jpg" alt="glm-4.7" loading="lazy" onclick="openModal(this.src)"></div>
+  </div>
+</div>
+<div class="task-section">
+  <div class="task-header">
+    <h2>UI 复刻（灵感平台）</h2>
+    <div class="task-prompt">按参考图复刻一个 AI 创意平台风格的单页面应用界面。<br><img class="prompt-img" src="https://image2.cdn.seaart.dev/2026-04-16/78b27e79/ebc6489872584e7391d66baf403e8bb4.jpg" alt="参考图" onclick="openModal(this.src)"></div>
+  </div>
+  <div class="grid">
+    <div class="model-card"><div class="model-name">Sonnet 4.5</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/41af94f4/4325c4f3966442e593b67fa149e97e66.jpg" alt="Sonnet 4.5" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Pro</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/268db538/4a82494d46da4113a4bb1e6507e4d504.jpg" alt="Gemini 3 Pro" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Flash</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/c63e175c/8032cef5892a40749bc67b06944f5e55.jpg" alt="Gemini 3 Flash" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">GPT5.2</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/5fa4aeb5/6a3aeb0894e54a829da1b04af731d8c4.jpg" alt="GPT5.2" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">GPT5.1 CODEX MAX</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/de8d5a62/577a3ddab6fb483b91223e55ea1612b4.jpg" alt="GPT5.1 CODEX MAX" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">minimax-m2.1</div><div class="no-img">没视觉能力，还原不了网页</div></div>
+    <div class="model-card"><div class="model-name">glm-4.7</div><div class="no-img">—</div></div>
+  </div>
+</div>
+<div class="task-section">
+  <div class="task-header">
+    <h2>SeaVerse 3D 粒子场</h2>
+    <div class="task-prompt">请帮我写一个单文件 HTML，直接双击可打开，不要用打包工具。背景用 Three.js 做一个 3D 粒子场，粒子组成文本 SeaVerse。加一个左侧侧边栏……</div>
+  </div>
+  <div class="grid">
+    <div class="model-card"><div class="model-name">Sonnet 4.5</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Pro</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Flash</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">GPT5.2</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">GPT5.1 CODEX MAX</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/37a539a9/bb59c781316543eeb63fceaa9e787f77.jpg" alt="GPT5.1 CODEX MAX" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">minimax-m2.1</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/f990aeaf/4467d8460c4c41d8909fc391564765bd.jpg" alt="minimax-m2.1" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">glm-4.7</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/b61df5f4/765a214ad89a461d8d753a7719d2dccc.jpg" alt="glm-4.7" loading="lazy" onclick="openModal(this.src)"></div>
+  </div>
+</div>
+<div class="task-section">
+  <div class="task-header">
+    <h2>3D 魔方</h2>
+    <div class="task-prompt">用极致的前端能力设计一个单页面 HTML：构建一个 3D 魔方，包含打乱按钮和解决按钮，同时允许用户手动操作并自行解开魔方。</div>
+  </div>
+  <div class="grid">
+    <div class="model-card"><div class="model-name">Sonnet 4.5</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/5f246516/623f53957f6e4af4ae38f9c9222d95df.jpg" alt="Sonnet 4.5" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Pro</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/319dcadd/5642fb56a4f748e2a3251ee62e964fb9.jpg" alt="Gemini 3 Pro" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">Gemini 3 Flash</div><div class="no-img">视频输出</div></div>
+    <div class="model-card"><div class="model-name">GPT5.2</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/3cbbe962/9acbb5865e0748758b2bc4b821b5cef3.jpg" alt="GPT5.2" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">GPT5.1 CODEX MAX</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/fff57906/81fccfea6819426fae531872944512d5.jpg" alt="GPT5.1 CODEX MAX" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">minimax-m2.1</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/39ac4400/1ac06545b14b46fea9775db3e8df7267.jpg" alt="minimax-m2.1" loading="lazy" onclick="openModal(this.src)"></div>
+    <div class="model-card"><div class="model-name">glm-4.7</div><img class="model-img" src="https://image2.cdn.seaart.dev/2026-04-16/6d89d992/fcdc00da17c745969a70e530c312f82e.jpg" alt="glm-4.7" loading="lazy" onclick="openModal(this.src)"></div>
+  </div>
+</div>
+<div class="modal" id="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modal-img" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+function openModal(src){document.getElementById('modal-img').src=src;document.getElementById('modal').classList.add('show');}
+function closeModal(){document.getElementById('modal').classList.remove('show');document.getElementById('modal-img').src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body></html>
