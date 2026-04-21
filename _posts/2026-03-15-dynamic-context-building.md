@@ -1,5 +1,5 @@
 ---
-title: "动态 Context 构建：从静态 Prompt 到智能信息装配"
+title: "怎么动态地组装 Context"
 date: 2026-03-15 20:00:00 +0800
 categories: [AI PM, Context Engineering]
 tags: ["动态Context", "RAG", "信息装配", "用户画像", "Agent"]
