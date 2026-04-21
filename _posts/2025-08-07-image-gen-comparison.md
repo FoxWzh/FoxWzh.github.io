@@ -1,5 +1,5 @@
 ---
-title: "图像生成能力横向比较：提示遵循 / 文字渲染 / 人像质量 / 风格一致性"
+title: "图像生成横向比较：提示遵循、文字、人像、风格"
 date: 2025-08-07 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [图像生成对比, FLUX, Midjourney, Ideogram, 选型]
