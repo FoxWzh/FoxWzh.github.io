@@ -1,5 +1,5 @@
 ---
-title: "LLM-as-Judge：用模型评估模型输出的方法论与陷阱"
+title: "用模型来评估模型，可靠吗"
 date: 2026-04-19 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["LLM-as-Judge", "评估", "偏差", "GPT-4o", "eval"]
