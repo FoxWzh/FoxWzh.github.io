@@ -1,5 +1,5 @@
 ---
-title: "Function Calling能力对比：BFCL v4视角下各模型的工具调用可靠性"
+title: "各模型的工具调用可靠吗——BFCL v4 的数据"
 date: 2025-05-08 21:00:00 +0800
 categories: [AI PM, LLM对比]
 tags: [Function-Calling, BFCL, 工具调用, Agent]
