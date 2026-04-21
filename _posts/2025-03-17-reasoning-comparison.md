@@ -1,5 +1,5 @@
 ---
-title: "综合推理能力对比：Claude / GPT / Gemini 谁在哪里赢"
+title: "Claude、GPT、Gemini 各自在哪里赢"
 date: 2025-03-17 21:00:00 +0800
 categories: [AI PM, LLM对比]
 tags: [Claude, GPT-5, Gemini, 推理对比, benchmark]
