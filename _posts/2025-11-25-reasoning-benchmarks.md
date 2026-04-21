@@ -1,5 +1,5 @@
 ---
-title: "推理与科学能力评测：GPQA / MATH / AIME 的设计与局限"
+title: "GPQA、MATH、AIME 测的是什么"
 date: 2025-11-25 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
 tags: ["GPQA", "AIME", "MathBench", "推理能力", "o1", "FrontierMath"]
