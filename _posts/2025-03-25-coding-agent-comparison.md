@@ -1,5 +1,5 @@
 ---
-title: "代码与Agent能力对比：SWE-bench视角下各模型的真实差距"
+title: "SWE-bench 看各模型的代码和 Agent 能力"
 date: 2025-03-25 21:00:00 +0800
 categories: [AI PM, LLM对比]
 tags: [SWE-bench, 代码能力, Agent, 编程对比]
