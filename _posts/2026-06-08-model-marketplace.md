@@ -1,5 +1,5 @@
 ---
-title: "模型市场产品逻辑：HuggingFace、Civitai与专业垂直市场的差异"
+title: "HuggingFace、Civitai 和垂直市场有什么不同"
 date: 2026-06-08 20:00:00 +0800
 categories: [AI PM, 模型平台]
 tags: ["模型市场", "HuggingFace", "Civitai", "ModelScope", "双边市场"]
