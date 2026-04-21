@@ -1,5 +1,5 @@
 ---
-title: "System Prompt 架构设计：角色、约束、上下文的分层组织"
+title: "System Prompt 怎么写"
 date: 2026-02-05 20:00:00 +0800
 categories: [AI PM, 提示词工程]
 tags: ["System Prompt", "提示词架构", "角色定义", "行为约束", "Claude"]
