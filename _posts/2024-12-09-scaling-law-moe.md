@@ -1,5 +1,5 @@
 ---
-title: "Scaling Law 与 MoE 架构：为什么大模型不再只靠堆参数"
+title: "Scaling Law 和 MoE：大模型怎么变聪明的"
 date: 2024-12-09 21:00:00 +0800
 categories: [AI PM, LLM基础]
 tags: [scaling-law, MoE, 混合专家, DeepSeek, 架构]
