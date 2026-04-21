@@ -1,5 +1,5 @@
 ---
-title: "Context 窗口管理：128K 时代的取舍与工程策略"
+title: "128K 的 Context 窗口怎么用"
 date: 2026-03-05 20:00:00 +0800
 categories: [AI PM, Context Engineering]
 tags: ["Context窗口", "RAG", "Token成本", "摘要压缩", "长上下文"]
