@@ -1,5 +1,5 @@
 ---
-title: "多模态评测体系：从MMBench到VideoMME"
+title: "多模态怎么评：MMBench 到 VideoMME"
 date: 2026-01-05 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
 tags: ["多模态评测", "MMBench", "VideoMME", "MMMU", "MathVista"]
