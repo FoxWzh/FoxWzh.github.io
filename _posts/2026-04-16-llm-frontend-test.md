@@ -1,5 +1,5 @@
 ---
-title: "LLM 前端能力横向测试：5 个任务看 7 款模型的真实水平"
+title: "5 个任务测了 7 款模型的前端能力"
 date: 2026-04-16 10:00:00 +0800
 categories: [AI PM, 模型测评]
 tags: ["前端生成", "模型对比", "Gemini", "GPT5", "Sonnet", "GLM", "minimax"]
