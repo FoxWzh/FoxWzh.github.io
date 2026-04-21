@@ -1,5 +1,5 @@
 ---
-title: "Google Imagen 4 / Adobe Firefly：企业级合规生图能力边界"
+title: "Imagen 4 和 Firefly：给企业用的生图"
 date: 2025-07-28 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [Imagen, Firefly, 企业合规, IP版权, 生图]
