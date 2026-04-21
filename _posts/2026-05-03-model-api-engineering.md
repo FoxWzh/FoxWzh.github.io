@@ -1,5 +1,5 @@
 ---
-title: "模型 API 的工程特性：速率限制、重试、流式输出与成本控制"
+title: "接模型 API 要注意哪些工程细节"
 date: 2026-05-03 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["Rate Limiting", "流式输出", "LLM Router", "成本控制", "API工程"]
