@@ -1,5 +1,5 @@
 ---
-title: "图像生成两条技术路线：Diffusion vs Autoregressive 的本质差异"
+title: "Diffusion 和 Autoregressive：图像生成的两条路"
 date: 2025-05-26 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [扩散模型, 自回归, FLUX, DALL-E, 图像生成架构]
