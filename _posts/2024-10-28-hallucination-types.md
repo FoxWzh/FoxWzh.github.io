@@ -1,5 +1,5 @@
 ---
-title: "幻觉的成因分类：事实性 vs 推理性 vs 格式性幻觉"
+title: "AI 的幻觉不止一种"
 date: 2024-10-28 21:00:00 +0800
 categories: [AI PM, LLM基础]
 tags: [幻觉, hallucination, RAG, 产品经理, llm]
