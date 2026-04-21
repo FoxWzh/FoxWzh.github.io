@@ -1,5 +1,5 @@
 ---
-title: "o1 和 R1 为什么比普通模型会"想""
+title: "o1 和 R1 为什么比普通模型会「想」"
 date: 2025-01-20 21:00:00 +0800
 categories: [AI PM, LLM基础]
 tags: [推理模型, CoT, o1, DeepSeek-R1, 思维链]
