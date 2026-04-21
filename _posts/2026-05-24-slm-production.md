@@ -1,5 +1,5 @@
 ---
-title: "小语言模型（SLM）的产品机会：端侧部署与专用化的新赛道"
+title: "小语言模型有哪些产品机会"
 date: 2026-05-24 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["SLM", "端侧部署", "量化", "Phi-3", "Qwen"]
