@@ -1,5 +1,5 @@
 ---
-title: "什么是 Context Engineering：从 Prompt Engineering 到 CE 的演化"
+title: "什么是 Context Engineering"
 date: 2026-02-15 20:00:00 +0800
 categories: [AI PM, Context Engineering]
 tags: ["Context Engineering", "RAG", "Agent", "信息管理", "AI工程"]
