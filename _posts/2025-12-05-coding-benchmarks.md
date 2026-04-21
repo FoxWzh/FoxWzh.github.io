@@ -1,5 +1,5 @@
 ---
-title: "代码与Agent能力评测：SWE-bench视角下的真实差距"
+title: "SWE-bench 在测什么"
 date: 2025-12-05 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
 tags: ["SWE-bench", "HumanEval", "代码评测", "Agent", "LiveCodeBench"]
