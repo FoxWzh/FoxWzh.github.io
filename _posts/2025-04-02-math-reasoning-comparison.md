@@ -1,5 +1,5 @@
 ---
-title: "数学推理能力对比：AIME 2025上各模型差异"
+title: "AIME 2025 上各模型的数学推理差距"
 date: 2025-04-02 21:00:00 +0800
 categories: [AI PM, LLM对比]
 tags: [AIME, 数学推理, 推理模型, benchmark]
