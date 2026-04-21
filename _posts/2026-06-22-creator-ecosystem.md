@@ -1,5 +1,5 @@
 ---
-title: "创作者生态设计：AI平台如何激励内容创作者与开发者生态"
+title: "AI 平台怎么做创作者生态"
 date: 2026-06-22 20:00:00 +0800
 categories: [AI PM, 模型平台]
 tags: ["创作者生态", "GPT Store", "Midjourney", "插件开发", "平台战略"]
