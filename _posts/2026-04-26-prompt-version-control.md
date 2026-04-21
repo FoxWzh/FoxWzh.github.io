@@ -1,5 +1,5 @@
 ---
-title: "Prompt 版本管理与 A/B 测试：让 AI 产品迭代可控可测"
+title: "Prompt 怎么做版本管理和 A/B 测试"
 date: 2026-04-26 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["Prompt管理", "A/B测试", "版本控制", "Promptfoo", "LLMOps"]
