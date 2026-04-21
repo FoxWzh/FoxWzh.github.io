@@ -1,5 +1,5 @@
 ---
-title: "FLUX.1 系列深度解析：为什么它取代了 Stable Diffusion 的位置"
+title: "FLUX.1 为什么把 Stable Diffusion 挤掉了"
 date: 2025-06-05 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [FLUX.1, Black-Forest-Labs, 图像生成, 文字渲染]
