@@ -1,5 +1,5 @@
 ---
-title: "中文能力与国内模型对比：Qwen3 / GLM-5 / Kimi K2 / MiniMax M2"
+title: "Qwen3、GLM-5、Kimi、MiniMax 中文能力怎么样"
 date: 2025-04-10 21:00:00 +0800
 categories: [AI PM, LLM对比]
 tags: [Qwen, GLM, Kimi, MiniMax, 国产模型]
