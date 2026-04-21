@@ -1,5 +1,5 @@
 ---
-title: "GPT Image / DALL-E 3：指令遵循优先的能力边界"
+title: "GPT Image 和 DALL-E 3：听话但有边界"
 date: 2025-06-26 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [GPT-Image, DALL-E3, 指令遵循, OpenAI, 图像生成]
