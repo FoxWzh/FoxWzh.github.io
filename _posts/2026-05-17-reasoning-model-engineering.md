@@ -1,5 +1,5 @@
 ---
-title: "推理模型的工程权衡：o1/o3 的延迟、成本与使用场景边界"
+title: "用推理模型要考虑哪些工程权衡"
 date: 2026-05-17 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["推理模型", "o1", "o3", "Extended Thinking", "工程权衡"]
