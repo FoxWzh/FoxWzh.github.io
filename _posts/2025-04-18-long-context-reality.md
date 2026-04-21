@@ -1,5 +1,5 @@
 ---
-title: "长上下文能力的真实边界：为什么百万token窗口不等于百万token可用"
+title: "百万 token 的上下文，实际能用多少"
 date: 2025-04-18 21:00:00 +0800
 categories: [AI PM, LLM对比]
 tags: [长上下文, Lost-in-Middle, 上下文窗口, RAG]
