@@ -1,5 +1,5 @@
 ---
-title: "推理成本的构成：FLOPs / 显存 / 批处理 / 推理加速"
+title: "AI 产品的推理成本从哪里来"
 date: 2025-03-03 21:00:00 +0800
 categories: [AI PM, LLM基础]
 tags: [推理成本, FLOPs, 显存, 批处理, vLLM, LLMOps]
