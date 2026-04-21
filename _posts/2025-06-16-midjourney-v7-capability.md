@@ -1,5 +1,5 @@
 ---
-title: "Midjourney v7：审美优先策略的能力边界"
+title: "Midjourney v7 能做什么，不能做什么"
 date: 2025-06-16 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [Midjourney, v7, 图像生成, 审美, AI绘画]
