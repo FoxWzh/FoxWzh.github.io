@@ -1,5 +1,5 @@
 ---
-title: "什么是 Harness Engineering：超越 Prompt，构建可靠 AI 系统的工程框架"
+title: "什么是 Harness Engineering"
 date: 2026-03-25 20:00:00 +0800
 categories: [AI PM, Context Engineering]
 tags: ["Harness Engineering", "Eval框架", "回归测试", "LLMOps", "可观测性"]
