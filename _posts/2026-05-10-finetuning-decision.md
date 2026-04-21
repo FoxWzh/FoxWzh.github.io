@@ -1,5 +1,5 @@
 ---
-title: "Fine-tuning 的产品决策：什么时候该微调，什么时候不该微调"
+title: "什么时候该微调，什么时候不该"
 date: 2026-05-10 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["Fine-tuning", "LoRA", "RAG", "模型微调", "产品决策"]
