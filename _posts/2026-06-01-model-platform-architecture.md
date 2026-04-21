@@ -1,5 +1,5 @@
 ---
-title: "模型平台产品架构：从模型API到全栈AI基础设施"
+title: "模型平台怎么从 API 变成基础设施"
 date: 2026-06-01 20:00:00 +0800
 categories: [AI PM, 模型平台]
 tags: ["模型平台", "AWS Bedrock", "API平台", "企业采购", "云厂商"]
