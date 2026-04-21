@@ -1,5 +1,5 @@
 ---
-title: "预训练 / SFT / RLHF / DPO：四种训练范式解决什么问题"
+title: "预训练、SFT、RLHF、DPO 各解决什么问题"
 date: 2024-11-18 21:00:00 +0800
 categories: [AI PM, LLM基础]
 tags: [SFT, RLHF, DPO, 预训练, 微调]
