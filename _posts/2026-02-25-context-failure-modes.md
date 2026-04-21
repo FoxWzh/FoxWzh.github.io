@@ -1,5 +1,5 @@
 ---
-title: "Context 的四种失效模式：Lost in the Middle、污染、溢出与稀释"
+title: "Context 会怎么失效"
 date: 2026-02-25 20:00:00 +0800
 categories: [AI PM, Context Engineering]
 tags: ["Context失效", "Lost in the Middle", "Context污染", "RAG", "长上下文"]
