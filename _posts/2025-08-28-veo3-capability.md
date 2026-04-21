@@ -1,5 +1,5 @@
 ---
-title: "Veo 3（Google）：原生音视频同步生成的能力边界"
+title: "Veo 3：Google 把音视频生成合在一起了"
 date: 2025-08-28 21:00:00 +0800
 categories: [AI PM, 视频生成模型]
 tags: [Veo3, Google, 视频生成, 音视频同步]
