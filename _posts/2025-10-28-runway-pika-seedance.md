@@ -1,5 +1,5 @@
 ---
-title: "Runway / Pika / Seedance：专业工具路线的三角对比"
+title: "Runway、Pika、Seedance 怎么选"
 date: 2025-10-28 20:00:00 +0800
 categories: [AI PM, 视频生成模型]
 tags: [Runway, Pika, Seedance, 视频工具对比]
