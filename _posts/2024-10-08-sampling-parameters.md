@@ -1,5 +1,5 @@
 ---
-title: "采样参数全解：Temperature / Top-p / Top-k 怎么影响输出"
+title: "Temperature、Top-p、Top-k 怎么用"
 date: 2024-10-08 20:00:00 +0800
 categories: [AI PM, LLM基础]
 tags: [temperature, top-p, top-k, 采样参数, llm]
