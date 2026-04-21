@@ -1,5 +1,5 @@
 ---
-title: "Kling 2.0/2.1（快手）：Motion Control 与长视频能力"
+title: "Kling 2.0：快手的视频生成到哪一步了"
 date: 2025-09-08 20:00:00 +0800
 categories: [AI PM, 视频生成模型]
 tags: [Kling, 快手, 视频生成, Motion Control, 长视频]
