@@ -1,5 +1,5 @@
 ---
-title: "LLM Observability：生产环境中的AI行为监控体系"
+title: "LLM Observability：怎么知道生产里的模型在做什么"
 date: 2026-04-05 20:00:00 +0800
 categories: [AI PM, LLMOps]
 tags: ["LLMOps", "可观测性", "监控", "Langfuse", "Helicone"]
