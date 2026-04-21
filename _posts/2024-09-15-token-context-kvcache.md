@@ -1,5 +1,5 @@
 ---
-title: "Token、Context Window、KV Cache：三个核心概念的产品含义"
+title: "Token、Context Window、KV Cache 是什么"
 date: 2024-09-15 21:30:00 +0800
 categories: [AI PM, LLM基础]
 tags: [token, context-window, kv-cache, 产品经理, llm]
