@@ -1,5 +1,5 @@
 ---
-title: "工具调用评测：BFCL v4 的设计与产品含义"
+title: "BFCL v4 在测什么"
 date: 2025-12-15 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
 tags: ["BFCL", "工具调用", "Function Calling", "Agent", "评测"]
