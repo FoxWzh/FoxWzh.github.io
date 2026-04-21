@@ -1,5 +1,5 @@
 ---
-title: "AI评测基准的演化史：从GLUE到GPQA的军备竞赛"
+title: "AI 评测基准怎么一步步变难的"
 date: 2025-11-15 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
 tags: ["benchmark", "MMLU", "GPQA", "评测体系", "Goodhart定律"]
