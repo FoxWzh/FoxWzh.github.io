@@ -1,5 +1,5 @@
 ---
-title: "Ideogram v2 / Recraft V3：文字渲染能力突破与图像 Elo 新格局"
+title: "Ideogram 和 Recraft：把文字画准了"
 date: 2025-07-17 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [Ideogram, Recraft, 文字渲染, 图像生成, 设计工具]
