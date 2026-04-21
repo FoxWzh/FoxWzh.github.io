@@ -1,5 +1,5 @@
 ---
-title: "Hailuo 2.3（MiniMax）：高性价比路线的能力与定位"
+title: "Hailuo 2.3：够用、便宜，就这两个优点"
 date: 2025-10-20 20:00:00 +0800
 categories: [AI PM, 视频生成模型]
 tags: [Hailuo, MiniMax, 视频生成, 性价比]
