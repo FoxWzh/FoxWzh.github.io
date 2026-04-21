@@ -1,5 +1,5 @@
 ---
-title: "模型定价策略演变：从按Token到订阅、从高价到价格战"
+title: "模型定价怎么从按 token 卷到价格战的"
 date: 2026-06-29 20:00:00 +0800
 categories: [AI PM, 模型平台]
 tags: ["定价策略", "Token价格", "价格战", "DeepSeek", "商业模式"]
