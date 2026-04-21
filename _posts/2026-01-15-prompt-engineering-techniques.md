@@ -1,5 +1,5 @@
 ---
-title: "Prompt Engineering 核心技法：从零样本到思维链的产品视角"
+title: "从零样本到思维链：Prompt 怎么写更有效"
 date: 2026-01-15 20:00:00 +0800
 categories: [AI PM, 提示词工程]
 tags: ["Prompt Engineering", "Few-shot", "Chain-of-Thought", "Role Prompting", "Zero-shot"]
