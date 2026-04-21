@@ -1,5 +1,5 @@
 ---
-title: "Sora 2（OpenAI）：物理仿真与长时序能力的边界检验"
+title: "Sora 2 实际上能做什么"
 date: 2025-10-02 19:30:00 +0800
 categories: [AI PM, 视频生成模型]
 tags: [Sora2, OpenAI, 视频生成, 物理仿真]
