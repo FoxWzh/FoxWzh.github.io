@@ -1,5 +1,5 @@
 ---
-title: "人类偏好评测：LMArena Elo 的价值与局限"
+title: "LMArena Elo 能信多少"
 date: 2025-12-25 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
 tags: ["LMArena", "Elo评分", "人类偏好", "Chatbot Arena", "模型选型"]
