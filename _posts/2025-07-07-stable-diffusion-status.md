@@ -1,5 +1,5 @@
 ---
-title: "Stable Diffusion 3.5 vs SDXL：开源生态现状"
+title: "Stable Diffusion 现在还值得用吗"
 date: 2025-07-07 21:00:00 +0800
 categories: [AI PM, 图像生成]
 tags: [Stable-Diffusion, SDXL, SD3.5, 开源图像生成]
