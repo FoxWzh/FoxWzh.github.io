@@ -1,5 +1,5 @@
 ---
-title: "结构化输出设计：JSON Mode 与格式控制的产品工程实践"
+title: "怎么让模型稳定输出 JSON"
 date: 2026-01-25 20:00:00 +0800
 categories: [AI PM, 提示词工程]
 tags: ["结构化输出", "JSON Mode", "Schema设计", "Pydantic", "输出格式"]
