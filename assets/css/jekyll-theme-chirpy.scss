@@ -146,6 +146,84 @@ html[data-mode="light"] .sidebar-about-inner {
   --home-hero-border: rgba(0, 0, 0, 0.07);
 }
 
+/* ================= 侧栏背景音乐 ================= */
+.sidebar-music {
+  margin-bottom: 1rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--home-hero-border, rgba(255, 255, 255, 0.08));
+  background: var(--card-bg, rgba(255, 255, 255, 0.03));
+}
+
+.sidebar-music-head {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sidebar-music-head i {
+  color: var(--link-color, inherit);
+}
+
+.sidebar-music-list {
+  list-style: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  max-height: 8.5rem;
+  overflow-y: auto;
+}
+
+.sidebar-music-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sidebar-music-list li:hover {
+  background: color-mix(in srgb, var(--link-color) 8%, transparent);
+}
+
+.sidebar-music-list li.active {
+  background: color-mix(in srgb, var(--link-color) 14%, transparent);
+}
+
+.sidebar-music-list .song-title {
+  font-size: 0.83rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-music-list li.active .song-title {
+  color: var(--link-color, inherit);
+}
+
+.sidebar-music-list .song-artist {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  max-width: 45%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-music-player iframe {
+  width: 100%;
+  height: 66px;
+  border: 0;
+  border-radius: 0.45rem;
+  display: block;
+}
+
 /* ================= 置顶卡片 ================= */
 #post-list .card.pinned {
   border: 1px solid var(--link-color, rgba(120, 150, 255, 0.55));

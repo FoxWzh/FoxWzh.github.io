@@ -1,0 +1,42 @@
+<section class="sidebar-music" aria-label="背景音乐">
+  <div class="sidebar-music-head">
+    <i class="fas fa-music fa-fw"></i>
+    <span>背景音乐</span>
+  </div>
+  <ul class="sidebar-music-list">
+    {% for song in site.data.music %}
+      <li data-id="{{ song.id }}"{% if forloop.first %} class="active"{% endif %}>
+        <span class="song-title">{{ song.title }}</span>
+        <span class="song-artist">{{ song.artist }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="sidebar-music-player">
+    <iframe
+      id="sidebar-music-iframe"
+      title="网易云音乐播放器"
+      frameborder="no"
+      marginwidth="0"
+      marginheight="0"
+      src="https://music.163.com/outchain/player?type=2&id={{ site.data.music.first.id }}&auto=0&height=66"
+    ></iframe>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var list = document.querySelectorAll(".sidebar-music-list li");
+    var frame = document.getElementById("sidebar-music-iframe");
+    if (!list.length || !frame) return;
+    list.forEach(function (li) {
+      li.addEventListener("click", function () {
+        list.forEach(function (x) { x.classList.remove("active"); });
+        li.classList.add("active");
+        frame.src =
+          "https://music.163.com/outchain/player?type=2&id=" +
+          li.getAttribute("data-id") +
+          "&auto=0&height=66";
+      });
+    });
+  })();
+</script>
