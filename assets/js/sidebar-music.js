@@ -19,6 +19,55 @@
   var isPlaying = false;
   var loopMode = "list";
   audio.volume = 0.8;
+  var STORAGE_KEY = "foxwzh_music_state";
+  var lastSave = 0;
+
+  function saveState() {
+    var state = {
+      id: list[current] ? list[current].getAttribute("data-id") : null,
+      time: audio.currentTime || 0,
+      playing: isPlaying,
+      volume: audio.volume,
+      muted: audio.muted,
+      loopMode: loopMode
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  function throttleSave() {
+    var now = Date.now();
+    if (now - lastSave > 1000) {
+      lastSave = now;
+      saveState();
+    }
+  }
+
+  function restoreState() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function updateLoopUI() {
+    loopBtn.classList.toggle("active", loopMode === "one");
+    loopBtn.title = loopMode === "one" ? "单曲循环" : "列表循环";
+    loopBtn.innerHTML =
+      loopMode === "one"
+        ? '<i class="fas fa-repeat-1"></i>'
+        : '<i class="fas fa-repeat"></i>';
+  }
+
+  function updateVolumeIcon() {
+    volumeBtn.innerHTML = audio.muted
+      ? '<i class="fas fa-volume-xmark"></i>'
+      : audio.volume === 0
+        ? '<i class="fas fa-volume-off"></i>'
+        : '<i class="fas fa-volume-up"></i>';
+  }
 
   function fmt(sec) {
     if (!isFinite(sec) || sec < 0) sec = 0;
@@ -46,6 +95,7 @@
     if (isPlaying) {
       audio.play().catch(function () {});
     }
+    saveState();
   }
 
   function play() {
@@ -54,10 +104,12 @@
       .then(function () {
         isPlaying = true;
         playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        saveState();
       })
       .catch(function () {
         isPlaying = false;
         playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        saveState();
       });
   }
 
@@ -65,11 +117,13 @@
     audio.pause();
     isPlaying = false;
     playBtn.innerHTML = '<i class="fas fa-play"></i>';
+    saveState();
   }
 
   function startPlaying() {
     playBtn.innerHTML = '<i class="fas fa-pause"></i>';
     isPlaying = true;
+    saveState();
   }
 
   playBtn.addEventListener("click", function () {
@@ -90,30 +144,21 @@
 
   loopBtn.addEventListener("click", function () {
     loopMode = loopMode === "list" ? "one" : "list";
-    loopBtn.classList.toggle("active", loopMode === "one");
-    loopBtn.title = loopMode === "one" ? "单曲循环" : "列表循环";
-    loopBtn.innerHTML =
-      loopMode === "one"
-        ? '<i class="fas fa-repeat-1"></i>'
-        : '<i class="fas fa-repeat"></i>';
+    updateLoopUI();
+    saveState();
   });
 
   volumeBtn.addEventListener("click", function () {
     audio.muted = !audio.muted;
-    volumeBtn.innerHTML = audio.muted
-      ? '<i class="fas fa-volume-xmark"></i>'
-      : audio.volume === 0
-        ? '<i class="fas fa-volume-off"></i>'
-        : '<i class="fas fa-volume-up"></i>';
+    updateVolumeIcon();
+    saveState();
   });
 
   volumeBar.addEventListener("input", function () {
     audio.volume = parseFloat(volumeBar.value);
     audio.muted = false;
-    volumeBtn.innerHTML =
-      audio.volume === 0
-        ? '<i class="fas fa-volume-off"></i>'
-        : '<i class="fas fa-volume-up"></i>';
+    updateVolumeIcon();
+    saveState();
   });
 
   list.forEach(function (li, i) {
@@ -132,6 +177,7 @@
       durationEl.textContent = fmt(audio.duration);
       fill.style.width = (audio.currentTime / audio.duration) * 100 + "%";
     }
+    throttleSave();
   });
 
   audio.addEventListener("ended", function () {
@@ -150,17 +196,59 @@
     audio.currentTime = ratio * audio.duration;
   });
 
-  load(0);
+  window.addEventListener("pagehide", saveState);
+
   var resumeOnInteraction = function () {
     audio.play().then(startPlaying).catch(function () {});
     document.removeEventListener("pointerdown", resumeOnInteraction);
     document.removeEventListener("keydown", resumeOnInteraction);
   };
-  audio
-    .play()
-    .then(startPlaying)
-    .catch(function () {
-      document.addEventListener("pointerdown", resumeOnInteraction);
-      document.addEventListener("keydown", resumeOnInteraction);
+
+  var saved = restoreState();
+  var startIndex = 0;
+  if (saved && saved.id) {
+    list.forEach(function (li, i) {
+      if (li.getAttribute("data-id") === saved.id) {
+        startIndex = i;
+      }
     });
+  }
+
+  load(startIndex);
+
+  if (saved) {
+    audio.volume = typeof saved.volume === "number" ? saved.volume : 0.8;
+    volumeBar.value = audio.volume;
+    audio.muted = !!saved.muted;
+    loopMode = saved.loopMode === "one" ? "one" : "list";
+    updateLoopUI();
+    updateVolumeIcon();
+    if (saved.time > 0.5) {
+      audio.addEventListener(
+        "loadedmetadata",
+        function () {
+          audio.currentTime = saved.time;
+          currentEl.textContent = fmt(saved.time);
+        },
+        { once: true }
+      );
+    }
+    if (saved.playing) {
+      audio
+        .play()
+        .then(startPlaying)
+        .catch(function () {
+          document.addEventListener("pointerdown", resumeOnInteraction);
+          document.addEventListener("keydown", resumeOnInteraction);
+        });
+    }
+  } else {
+    audio
+      .play()
+      .then(startPlaying)
+      .catch(function () {
+        document.addEventListener("pointerdown", resumeOnInteraction);
+        document.addEventListener("keydown", resumeOnInteraction);
+      });
+  }
 })();
