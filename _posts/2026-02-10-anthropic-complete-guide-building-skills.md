@@ -8,7 +8,6 @@ source_author: "Anthropic"
 source_date: "2026-01"
 source_lang: en
 source_type: 官方文档
-pin: true
 ---
 
 Anthropic 出了一份关于怎么构建 Claude Skill 的官方文档，33 页，从架构到排错都有。这里记一些我觉得值得记的东西。

@@ -3,6 +3,7 @@ title: "图像编辑横向对比：16 款模型 42 个用例"
 date: 2026-03-28 10:00:00 +0800
 categories: [AI PM, 模型测评]
 tags: ["图像编辑", "模型对比", "图像生成"]
+pin: true
 ---
 
 这是一份实测记录，覆盖了当前主流的 **16 个图像编辑/生成模型**，包括 banana、banana pro、banana 2、flux2 pro、flux2 flex、seedream 4.5、seedream 5.0、kling o1、kling 3.0omni、qwen image 2.0、uni、grok、longcat、qwen 2511、flux2 klein 9b、firered 1.1、joyai。
