@@ -73,6 +73,9 @@ avatar: /assets/img/avatar.jpg
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 social_preview_image:
 
+# 全站背景图（位于 assets/img/bg/blog-bg.jpg）
+blog_background: /assets/img/bg/blog-bg.jpg
+
 # boolean type, the global switch for TOC in posts.
 toc: true
 

@@ -146,6 +146,51 @@ html[data-mode="light"] .sidebar-about-inner {
   --home-hero-border: rgba(0, 0, 0, 0.07);
 }
 
+/* ================= 全站背景图 ================= */
+body {
+  background-image: url("/assets/img/bg/blog-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+html[data-mode="dark"] body {
+  background-color: rgba(19, 20, 22, 0.72);
+}
+
+html[data-mode="light"] body {
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+/* 内容容器半透明，让背景图隐约透出来 */
+html[data-mode="dark"] body #main-wrapper {
+  background-color: rgba(27, 27, 30, 0.82);
+}
+
+html[data-mode="light"] body #main-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+html[data-mode="dark"] body #sidebar {
+  background-color: rgba(27, 27, 30, 0.78);
+}
+
+html[data-mode="light"] body #sidebar {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+@media (max-width: 1199px) {
+  html[data-mode="dark"] body #main-wrapper,
+  html[data-mode="dark"] body #sidebar {
+    background-color: rgba(27, 27, 30, 0.92);
+  }
+
+  html[data-mode="light"] body #main-wrapper,
+  html[data-mode="light"] body #sidebar {
+    background-color: rgba(255, 255, 255, 0.96);
+  }
+}
+
 /* ================= 置顶卡片 ================= */
 #post-list .card.pinned {
   border: 1px solid var(--link-color, rgba(120, 150, 255, 0.55));
