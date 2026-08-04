@@ -3,40 +3,156 @@
     <i class="fas fa-music fa-fw"></i>
     <span>背景音乐</span>
   </div>
+
+  <div class="sidebar-music-now">
+    <div class="now-title" id="sm-title">{{ site.data.music.first.title }}</div>
+    <div class="now-artist" id="sm-artist">{{ site.data.music.first.artist }}</div>
+  </div>
+
+  <div class="sidebar-music-controls">
+    <button type="button" class="sm-btn" id="sm-prev" aria-label="上一首">
+      <i class="fas fa-step-backward"></i>
+    </button>
+    <button type="button" class="sm-btn sm-play" id="sm-play" aria-label="播放或暂停">
+      <i class="fas fa-play"></i>
+    </button>
+    <button type="button" class="sm-btn" id="sm-next" aria-label="下一首">
+      <i class="fas fa-step-forward"></i>
+    </button>
+  </div>
+
+  <div class="sidebar-music-progress">
+    <span class="sm-time" id="sm-current">0:00</span>
+    <div class="sm-bar" id="sm-bar">
+      <div class="sm-bar-fill" id="sm-fill"></div>
+    </div>
+    <span class="sm-time" id="sm-duration">0:00</span>
+  </div>
+
   <ul class="sidebar-music-list">
     {% for song in site.data.music %}
-      <li data-id="{{ song.id }}"{% if forloop.first %} class="active"{% endif %}>
+      <li
+        data-id="{{ song.id }}"
+        data-title="{{ song.title }}"
+        data-artist="{{ song.artist }}"
+        {% if forloop.first %}class="active"{% endif %}
+      >
         <span class="song-title">{{ song.title }}</span>
         <span class="song-artist">{{ song.artist }}</span>
       </li>
     {% endfor %}
   </ul>
-  <div class="sidebar-music-player">
-    <iframe
-      id="sidebar-music-iframe"
-      title="网易云音乐播放器"
-      frameborder="no"
-      marginwidth="0"
-      marginheight="0"
-      src="https://music.163.com/outchain/player?type=2&id={{ site.data.music.first.id }}&auto=0&height=66"
-    ></iframe>
-  </div>
 </section>
 
 <script>
   (function () {
     var list = document.querySelectorAll(".sidebar-music-list li");
-    var frame = document.getElementById("sidebar-music-iframe");
-    if (!list.length || !frame) return;
-    list.forEach(function (li) {
-      li.addEventListener("click", function () {
-        list.forEach(function (x) { x.classList.remove("active"); });
-        li.classList.add("active");
-        frame.src =
-          "https://music.163.com/outchain/player?type=2&id=" +
-          li.getAttribute("data-id") +
-          "&auto=0&height=66";
+    var titleEl = document.getElementById("sm-title");
+    var artistEl = document.getElementById("sm-artist");
+    var playBtn = document.getElementById("sm-play");
+    var prevBtn = document.getElementById("sm-prev");
+    var nextBtn = document.getElementById("sm-next");
+    var currentEl = document.getElementById("sm-current");
+    var durationEl = document.getElementById("sm-duration");
+    var bar = document.getElementById("sm-bar");
+    var fill = document.getElementById("sm-fill");
+    if (!list.length) return;
+
+    var audio = new Audio();
+    var current = 0;
+    var isPlaying = false;
+
+    function fmt(sec) {
+      if (!isFinite(sec) || sec < 0) sec = 0;
+      var m = Math.floor(sec / 60);
+      var s = Math.floor(sec % 60);
+      return m + ":" + (s < 10 ? "0" : "") + s;
+    }
+
+    function load(index) {
+      var li = list[index];
+      if (!li) return;
+      current = index;
+      list.forEach(function (x, i) {
+        x.classList.toggle("active", i === index);
       });
+      titleEl.textContent = li.getAttribute("data-title");
+      artistEl.textContent = li.getAttribute("data-artist");
+      audio.src =
+        "https://music.163.com/song/media/outer/url?id=" +
+        li.getAttribute("data-id") +
+        ".mp3";
+      currentEl.textContent = "0:00";
+      durationEl.textContent = "0:00";
+      fill.style.width = "0%";
+      if (isPlaying) {
+        audio.play().catch(function () {});
+      }
+    }
+
+    function play() {
+      if (!audio.src) load(0);
+      audio
+        .play()
+        .then(function () {
+          isPlaying = true;
+          playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        })
+        .catch(function () {
+          isPlaying = false;
+          playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        });
+    }
+
+    function pause() {
+      audio.pause();
+      isPlaying = false;
+      playBtn.innerHTML = '<i class="fas fa-play"></i>';
+    }
+
+    playBtn.addEventListener("click", function () {
+      if (isPlaying) {
+        pause();
+      } else {
+        play();
+      }
+    });
+
+    prevBtn.addEventListener("click", function () {
+      load((current - 1 + list.length) % list.length);
+    });
+
+    nextBtn.addEventListener("click", function () {
+      load((current + 1) % list.length);
+    });
+
+    list.forEach(function (li, i) {
+      li.addEventListener("click", function () {
+        if (i !== current) {
+          load(i);
+        } else {
+          play();
+        }
+      });
+    });
+
+    audio.addEventListener("timeupdate", function () {
+      currentEl.textContent = fmt(audio.currentTime);
+      if (audio.duration) {
+        durationEl.textContent = fmt(audio.duration);
+        fill.style.width = (audio.currentTime / audio.duration) * 100 + "%";
+      }
+    });
+
+    audio.addEventListener("ended", function () {
+      load((current + 1) % list.length);
+    });
+
+    bar.addEventListener("click", function (e) {
+      if (!audio.duration) return;
+      var rect = bar.getBoundingClientRect();
+      var ratio = (e.clientX - rect.left) / rect.width;
+      audio.currentTime = ratio * audio.duration;
     });
   })();
 </script>

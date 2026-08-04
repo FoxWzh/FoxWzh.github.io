@@ -149,7 +149,7 @@ html[data-mode="light"] .sidebar-about-inner {
 /* ================= 侧栏背景音乐 ================= */
 .sidebar-music {
   margin-bottom: 1rem;
-  padding: 0.8rem 0.9rem;
+  padding: 0.9rem;
   border-radius: 0.6rem;
   border: 1px solid var(--home-hero-border, rgba(255, 255, 255, 0.08));
   background: var(--card-bg, rgba(255, 255, 255, 0.03));
@@ -159,13 +159,108 @@ html[data-mode="light"] .sidebar-about-inner {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.82rem;
   font-weight: 600;
 }
 
 .sidebar-music-head i {
   color: var(--link-color, inherit);
+}
+
+.sidebar-music-now {
+  text-align: center;
+  margin-bottom: 0.7rem;
+  min-height: 2.5rem;
+}
+
+.sidebar-music-now .now-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-music-now .now-artist {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-music-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.sm-btn {
+  background: none;
+  border: 0;
+  color: var(--text-color, inherit);
+  cursor: pointer;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.85rem;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.sm-btn:hover {
+  color: var(--link-color, inherit);
+}
+
+.sm-play {
+  width: 2.3rem;
+  height: 2.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--link-color, #6c8cff);
+  color: #fff !important;
+  font-size: 0.85rem;
+}
+
+.sm-play:hover {
+  opacity: 0.88;
+}
+
+.sidebar-music-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sm-time {
+  font-size: 0.68rem;
+  opacity: 0.55;
+  min-width: 2.2rem;
+}
+
+.sm-time:last-child {
+  text-align: right;
+}
+
+.sm-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--text-color) 18%, transparent);
+  cursor: pointer;
+  position: relative;
+}
+
+.sm-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 2px;
+  background: var(--link-color, #6c8cff);
+  transition: width 0.2s linear;
 }
 
 .sidebar-music-list {
@@ -214,14 +309,6 @@ html[data-mode="light"] .sidebar-about-inner {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.sidebar-music-player iframe {
-  width: 100%;
-  height: 66px;
-  border: 0;
-  border-radius: 0.45rem;
-  display: block;
 }
 
 /* ================= 置顶卡片 ================= */
