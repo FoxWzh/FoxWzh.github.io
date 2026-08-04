@@ -10,6 +10,9 @@
   </div>
 
   <div class="sidebar-music-controls">
+    <button type="button" class="sm-btn" id="sm-loop" aria-label="切换循环模式" title="列表循环">
+      <i class="fas fa-repeat"></i>
+    </button>
     <button type="button" class="sm-btn" id="sm-prev" aria-label="上一首">
       <i class="fas fa-step-backward"></i>
     </button>
@@ -27,6 +30,22 @@
       <div class="sm-bar-fill" id="sm-fill"></div>
     </div>
     <span class="sm-time" id="sm-duration">0:00</span>
+  </div>
+
+  <div class="sm-volume-row">
+    <button type="button" class="sm-btn sm-volume-btn" id="sm-volume-btn" aria-label="静音">
+      <i class="fas fa-volume-up"></i>
+    </button>
+    <input
+      type="range"
+      class="sm-volume"
+      id="sm-volume"
+      min="0"
+      max="1"
+      step="0.05"
+      value="0.8"
+      aria-label="音量"
+    >
   </div>
 
   <ul class="sidebar-music-list">
@@ -52,6 +71,9 @@
     var playBtn = document.getElementById("sm-play");
     var prevBtn = document.getElementById("sm-prev");
     var nextBtn = document.getElementById("sm-next");
+    var loopBtn = document.getElementById("sm-loop");
+    var volumeBtn = document.getElementById("sm-volume-btn");
+    var volumeBar = document.getElementById("sm-volume");
     var currentEl = document.getElementById("sm-current");
     var durationEl = document.getElementById("sm-duration");
     var bar = document.getElementById("sm-bar");
@@ -61,6 +83,8 @@
     var audio = new Audio();
     var current = 0;
     var isPlaying = false;
+    var loopMode = "list"; // list | one
+    audio.volume = 0.8;
 
     function fmt(sec) {
       if (!isFinite(sec) || sec < 0) sec = 0;
@@ -91,7 +115,6 @@
     }
 
     function play() {
-      if (!audio.src) load(0);
       audio
         .play()
         .then(function () {
@@ -110,6 +133,11 @@
       playBtn.innerHTML = '<i class="fas fa-play"></i>';
     }
 
+    function startPlaying() {
+      playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      isPlaying = true;
+    }
+
     playBtn.addEventListener("click", function () {
       if (isPlaying) {
         pause();
@@ -124,6 +152,34 @@
 
     nextBtn.addEventListener("click", function () {
       load((current + 1) % list.length);
+    });
+
+    loopBtn.addEventListener("click", function () {
+      loopMode = loopMode === "list" ? "one" : "list";
+      loopBtn.classList.toggle("active", loopMode === "one");
+      loopBtn.title = loopMode === "one" ? "单曲循环" : "列表循环";
+      loopBtn.innerHTML =
+        loopMode === "one"
+          ? '<i class="fas fa-repeat-1"></i>'
+          : '<i class="fas fa-repeat"></i>';
+    });
+
+    volumeBtn.addEventListener("click", function () {
+      audio.muted = !audio.muted;
+      volumeBtn.innerHTML = audio.muted
+        ? '<i class="fas fa-volume-xmark"></i>'
+        : audio.volume === 0
+          ? '<i class="fas fa-volume-off"></i>'
+          : '<i class="fas fa-volume-up"></i>';
+    });
+
+    volumeBar.addEventListener("input", function () {
+      audio.volume = parseFloat(volumeBar.value);
+      audio.muted = false;
+      volumeBtn.innerHTML =
+        audio.volume === 0
+          ? '<i class="fas fa-volume-off"></i>'
+          : '<i class="fas fa-volume-up"></i>';
     });
 
     list.forEach(function (li, i) {
@@ -145,7 +201,12 @@
     });
 
     audio.addEventListener("ended", function () {
-      load((current + 1) % list.length);
+      if (loopMode === "one") {
+        audio.currentTime = 0;
+        audio.play().catch(function () {});
+      } else {
+        load((current + 1) % list.length);
+      }
     });
 
     bar.addEventListener("click", function (e) {
@@ -154,5 +215,20 @@
       var ratio = (e.clientX - rect.left) / rect.width;
       audio.currentTime = ratio * audio.duration;
     });
+
+    // 初始化第一首，并尝试自动播放
+    load(0);
+    var resumeOnInteraction = function () {
+      audio.play().then(startPlaying).catch(function () {});
+      document.removeEventListener("pointerdown", resumeOnInteraction);
+      document.removeEventListener("keydown", resumeOnInteraction);
+    };
+    audio
+      .play()
+      .then(startPlaying)
+      .catch(function () {
+        document.addEventListener("pointerdown", resumeOnInteraction);
+        document.addEventListener("keydown", resumeOnInteraction);
+      });
   })();
 </script>
