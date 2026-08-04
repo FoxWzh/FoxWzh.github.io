@@ -2,7 +2,7 @@
 title: "Superpowers：不是新的 Agent，而是给 Coding Agent 加上工程纪律"
 date: 2026-04-30 10:00:00 +0800
 categories: [AI, Agent]
-tags: [agent, coding-agent, superpowers, harness, workflow]
+tags: ["Agent", "评测"]
 ---
 # Superpowers：不是新的 Agent，而是给 Coding Agent 加上工程纪律
 

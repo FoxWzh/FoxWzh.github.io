@@ -2,7 +2,7 @@
 title: "Eval 驱动开发是什么意思"
 date: 2026-04-12 20:00:00 +0800
 categories: [AI PM, LLMOps]
-tags: ["Eval", "EDD", "Golden Set", "AI测试", "LLMOps"]
+tags: ["评测", "LLMOps"]
 ---
 **在AI产品开发中，没有评估集就开始迭代，相当于在黑暗中开车——你不知道自己在前进还是在倒退。**
 

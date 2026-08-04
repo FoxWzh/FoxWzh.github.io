@@ -2,7 +2,7 @@
 title: "Temperature、Top-p、Top-k 怎么用"
 date: 2024-10-08 20:00:00 +0800
 categories: [AI PM, LLM基础]
-tags: [temperature, top-p, top-k, 采样参数, llm]
+tags: ["采样参数", "模型对比"]
 ---
 
 > 一句话摘要：这三个参数是控制 AI "说话风格"的旋钮——读完你能在写 Prompt 或配置 API 时，知道该拧哪个旋钮、拧多大。

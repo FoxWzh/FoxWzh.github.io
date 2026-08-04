@@ -2,7 +2,7 @@
 title: "Qwen3、GLM-5、Kimi、MiniMax 中文能力怎么样"
 date: 2025-04-10 21:00:00 +0800
 categories: [AI PM, LLM对比]
-tags: [Qwen, GLM, Kimi, MiniMax, 国产模型]
+tags: ["国产模型"]
 ---
 
 > 2025年，中文大模型已经不是"将就能用"，而是在特定场景真正超过了国际模型——关键是选对场景。

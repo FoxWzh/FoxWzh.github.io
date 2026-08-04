@@ -2,7 +2,7 @@
 title: '彭明敏为 "一中一台 "的理念而战'
 date: 2024-07-05 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-07/pengmingminwei-yizhongyitai-delinianerzhan.png
 ---
 

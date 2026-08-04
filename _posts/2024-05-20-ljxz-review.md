@@ -2,7 +2,7 @@
 title: "连麻Swimming《邻家小丈夫》：他终于不绷着了"
 date: 2024-05-20 12:00:00 +0800
 categories: [音乐]
-tags: ["说唱", "中文说唱", "专辑评论", "连麻Swimming", "邻家小丈夫", "五人组", "川渝说唱"]
+tags: ["中文说唱", "音乐评论", "连麻Swimming"]
 image: /assets/img/posts/2026-08/ljxz-cover.jpg
 ---
 

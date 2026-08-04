@@ -2,7 +2,7 @@
 title: "各模型的工具调用可靠吗——BFCL v4 的数据"
 date: 2025-05-08 21:00:00 +0800
 categories: [AI PM, LLM对比]
-tags: [Function-Calling, BFCL, 工具调用, Agent]
+tags: ["工具调用", "Agent"]
 ---
 
 如果你在做AI Agent或者工具调用类的产品，你一定遇到过这类问题：模型明明"会用工具"，但到了复杂流程里，就开始乱调函数、忘记上下文、在出错后不知道怎么恢复。这背后有没有系统性的评测数据？有，就是BFCL——Berkeley Function Calling Leaderboard。

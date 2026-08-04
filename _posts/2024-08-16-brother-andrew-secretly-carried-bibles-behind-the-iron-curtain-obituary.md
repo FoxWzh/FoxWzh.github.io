@@ -2,7 +2,7 @@
 title: "Brother Andrew secretly carried Bibles behind the Iron Curtain"
 date: 2024-08-16 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-08/brother-andrew-secretly-carried-bibles-behind-the-iron-curtain.png
 ---
 

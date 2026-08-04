@@ -2,7 +2,7 @@
 title: "System Prompt 怎么写"
 date: 2026-02-05 20:00:00 +0800
 categories: [AI PM, 提示词工程]
-tags: ["System Prompt", "提示词架构", "角色定义", "行为约束", "Claude"]
+tags: ["提示词", "Claude"]
 ---
 **System Prompt 是 AI 产品的"宪法"——它定义了产品的边界、角色和行为规范，但如果设计失当，它也会成为产品质量的最大隐患。**
 

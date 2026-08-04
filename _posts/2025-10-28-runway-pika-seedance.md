@@ -2,7 +2,7 @@
 title: "Runway、Pika、Seedance 怎么选"
 date: 2025-10-28 20:00:00 +0800
 categories: [AI PM, 视频生成模型]
-tags: [Runway, Pika, Seedance, 视频工具对比]
+tags: ["视频生成"]
 ---
 **一句话摘要：** Runway、Pika、Seedance分别代表了视频生成工具的三种进化方向——专业影视工具、创意特效工具、叙事连贯工具，选型错误不是"将就"的问题，而是根本就不适配你的用户场景。
 

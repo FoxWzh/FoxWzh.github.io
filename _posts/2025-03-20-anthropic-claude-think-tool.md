@@ -2,7 +2,7 @@
 title: "给 Claude 加一个「暂停思考」的工具"
 date: 2025-03-20 10:00:00 +0800
 categories: [巨人肩膀, Anthropic]
-tags: ["think tool", "Agent", "工具调用", "τ-bench", "SWE-bench", "推理"]
+tags: ["工具调用", "Agent", "基准测试"]
 source_title: "The \"think\" tool: Enabling Claude to stop and think in complex tool use situations"
 source_author: "Anthropic Engineering"
 source_url: "https://www.anthropic.com/engineering/claude-think-tool"

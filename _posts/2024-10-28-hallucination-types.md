@@ -2,7 +2,7 @@
 title: "AI 的幻觉不止一种"
 date: 2024-10-28 21:00:00 +0800
 categories: [AI PM, LLM基础]
-tags: [幻觉, hallucination, RAG, 产品经理, llm]
+tags: ["幻觉", "RAG", "产品经理", "模型对比"]
 ---
 
 > 一句话摘要：AI"胡说八道"不是一种病，是三种病——搞清楚是哪种，才能用对药。

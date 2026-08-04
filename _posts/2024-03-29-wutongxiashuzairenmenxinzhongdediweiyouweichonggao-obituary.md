@@ -2,7 +2,7 @@
 title: "梧桐峡树在人们心中的地位尤为崇高"
 date: 2024-03-29 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-03/wutongxiashuzairenmenxinzhongdediweiyouweichonggao.png
 ---
 

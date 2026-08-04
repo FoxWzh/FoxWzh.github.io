@@ -2,7 +2,7 @@
 title: "Prompt caching 比想象中重要"
 date: 2026-05-27 00:01:00 +0800
 categories: [巨人肩膀, Anthropic]
-tags: ["Prompt Caching", "Claude Code", "Agent", "上下文工程", "成本优化"]
+tags: ["提示词", "Claude Code", "Agent", "上下文工程", "成本优化"]
 source_title: "Lessons from building Claude Code: Prompt caching is everything"
 source_author: "Thariq Shihipar"
 source_url: "https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything"

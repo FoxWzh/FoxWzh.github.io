@@ -2,7 +2,7 @@
 title: "GPQA、MATH、AIME 测的是什么"
 date: 2025-11-25 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
-tags: ["GPQA", "AIME", "MathBench", "推理能力", "o1", "FrontierMath"]
+tags: ["基准测试", "推理模型"]
 ---
 **一句话摘要：** 推理评测是目前最能区分顶级模型的维度，理解GPQA、MATH、AIME的设计逻辑，才能判断模型的"推理能力"到底是真推理还是花架子。
 

@@ -2,7 +2,7 @@
 title: "SASIOVERLXRD《赫鬼》：显赫是皮，压抑是核"
 date: 2026-07-31 12:00:00 +0800
 categories: [音乐]
-tags: ["说唱", "中文说唱", "专辑评论", "SASIOVERLXRD", "赫鬼", "五人组", "川渝说唱"]
+tags: ["中文说唱", "音乐评论", "SASIOVERLXRD"]
 image: /assets/img/posts/2026-08/hegui-cover.jpg
 ---
 

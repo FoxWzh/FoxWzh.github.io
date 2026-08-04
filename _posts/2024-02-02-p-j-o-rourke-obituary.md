@@ -2,7 +2,7 @@
 title: "P.J. O’Rourke希望让各地的慈善家们生不如死"
 date: 2024-02-02 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-02/p-j-o-rourke.png
 ---
 

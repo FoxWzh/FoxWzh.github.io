@@ -2,7 +2,7 @@
 title: "Ko Jimmy was determined to make Myanmar free科吉米决心让缅甸自由"
 date: 2024-08-23 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-08/ko-jimmy-was-determined-to-make-myanmar-free.png
 ---
 

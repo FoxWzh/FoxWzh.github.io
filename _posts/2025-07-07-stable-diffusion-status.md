@@ -2,7 +2,7 @@
 title: "Stable Diffusion 现在还值得用吗"
 date: 2025-07-07 21:00:00 +0800
 categories: [AI PM, 图像生成]
-tags: [Stable-Diffusion, SDXL, SD3.5, 开源图像生成]
+tags: ["图像生成"]
 ---
 
 > SD 3.5发布已过半年，但SDXL凭借成熟生态依然是大多数垂直场景的首选——开源图像生成的竞争，从来不只是参数量的比拼。

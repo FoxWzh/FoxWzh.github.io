@@ -2,7 +2,7 @@
 title: "Vera Putina claimed to be Vladimir Putin’s real mother"
 date: 2024-09-27 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-09/vera-putina-claimed-to-be-vladimir-putin-s-real-mother.png
 ---
 

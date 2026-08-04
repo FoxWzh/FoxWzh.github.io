@@ -2,7 +2,7 @@
 title: "GPT Image 和 DALL-E 3：听话但有边界"
 date: 2025-06-26 21:00:00 +0800
 categories: [AI PM, 图像生成]
-tags: [GPT-Image, DALL-E3, 指令遵循, OpenAI, 图像生成]
+tags: ["图像生成", "OpenAI"]
 ---
 
 > 从 DALL-E 3 到 GPT-4o 原生图像，OpenAI 走的路一直很清晰：宁可牺牲一点艺术性，也要让模型真正听懂你在说什么。

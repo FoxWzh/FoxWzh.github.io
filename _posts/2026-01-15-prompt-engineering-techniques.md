@@ -2,7 +2,7 @@
 title: "从零样本到思维链：Prompt 怎么写更有效"
 date: 2026-01-15 20:00:00 +0800
 categories: [AI PM, 提示词工程]
-tags: ["Prompt Engineering", "Few-shot", "Chain-of-Thought", "Role Prompting", "Zero-shot"]
+tags: ["提示词"]
 ---
 **Prompt Engineering 不是一次性的配置工作，而是 AI 产品迭代的持续竞争力——掌握从零样本到思维链的核心技法，是 PM 构建可靠 AI 产品的基础能力。**
 

@@ -2,7 +2,7 @@
 title: "128K 的 Context 窗口怎么用"
 date: 2026-03-05 20:00:00 +0800
 categories: [AI PM, Context Engineering]
-tags: ["Context窗口", "RAG", "Token成本", "摘要压缩", "长上下文"]
+tags: ["上下文工程", "RAG"]
 ---
 **拥有128K甚至200K的context窗口，并不意味着可以把所有信息无脑塞进去——大窗口带来的是新的成本结构和注意力质量问题，而非免除了context管理的必要性。**
 

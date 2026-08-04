@@ -2,7 +2,7 @@
 title: "Vansdaddy《都市醉漢》：醉出来的三个我"
 date: 2026-03-16 12:00:00 +0800
 categories: [音乐]
-tags: ["说唱", "中文说唱", "专辑评论", "Vansdaddy", "都市醉漢", "东亚焦虑"]
+tags: ["中文说唱", "音乐评论"]
 image: /assets/img/posts/2026-03/vansdaddy-dszh-cover.jpg
 ---
 

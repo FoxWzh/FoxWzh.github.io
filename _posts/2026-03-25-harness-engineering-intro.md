@@ -2,7 +2,7 @@
 title: "什么是 Harness Engineering"
 date: 2026-03-25 20:00:00 +0800
 categories: [AI PM, Context Engineering]
-tags: ["Harness Engineering", "Eval框架", "回归测试", "LLMOps", "可观测性"]
+tags: ["评测", "LLMOps"]
 ---
 **Prompt Engineering解决了"能不能用"的问题，Context Engineering解决了"用得好不好"的问题，而Harness Engineering解决的是"能不能在生产环境中可靠运行、持续迭代"的问题。**
 

@@ -2,7 +2,7 @@
 title: "T.S. Shanbhag 于 5 月 4 日死于冠状病毒"
 date: 2024-07-26 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-07/t-s-shanbhag.png
 ---
 

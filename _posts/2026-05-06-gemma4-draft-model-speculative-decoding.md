@@ -2,7 +2,7 @@
 title: 为什么 Google 给 Gemma 4 单独做了个「草稿模型」
 date: 2026-05-06 09:00:00 +0800
 categories: [AI]
-tags: [推理优化, speculative decoding, Gemma, LLM]
+tags: ["推理优化", "推理模型", "模型对比"]
 ---
 今天看到 Google 给 Gemma 4 发布了一个专门用于 Speculative Decoding 的 Draft Model。
 

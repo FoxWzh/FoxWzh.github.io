@@ -2,7 +2,7 @@
 title: "SWE-bench 在测什么"
 date: 2025-12-05 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
-tags: ["SWE-bench", "HumanEval", "代码评测", "Agent", "LiveCodeBench"]
+tags: ["基准测试", "评测", "Agent"]
 ---
 **一句话摘要：** HumanEval已经基本没有区分意义，SWE-bench才是真正测试AI能否替代程序员的关键评测，理解50%和60%之间的实际差距，直接影响AI编程助手的产品决策。
 

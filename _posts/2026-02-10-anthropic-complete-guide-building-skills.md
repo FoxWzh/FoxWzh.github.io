@@ -2,7 +2,7 @@
 title: "Anthropic 官方出了一份 33 页的 Skill 构建手册"
 date: 2026-02-10 10:00:00 +0800
 categories: [巨人肩膀, Anthropic]
-tags: ["Skill", "Claude", "AI工具链", "Agent", "MCP", "工作流自动化"]
+tags: ["提示词", "Claude", "MCP", "Agent"]
 source_title: "The Complete Guide to Building Skills for Claude"
 source_author: "Anthropic"
 source_date: "2026-01"

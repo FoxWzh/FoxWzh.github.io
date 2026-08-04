@@ -2,7 +2,7 @@
 title: "Lilian Weng 那篇 Agent 综述，还是值得读"
 date: 2024-06-23 10:00:00 +0800
 categories: [巨人肩膀, OpenAI]
-tags: ["Agent", "LLM", "规划", "记忆", "工具调用", "CoT", "ReAct", "Reflexion"]
+tags: ["Agent", "模型对比", "工具调用", "提示词"]
 source_title: "LLM Powered Autonomous Agents"
 source_author: "Lilian Weng"
 source_url: "https://lilianweng.github.io/posts/2023-06-23-agent/"

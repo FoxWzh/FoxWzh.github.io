@@ -2,7 +2,7 @@
 title: "连麻Swimming《雅痞》：痞是壳，敏感才是核"
 date: 2023-04-10 12:00:00 +0800
 categories: [音乐]
-tags: ["说唱", "中文说唱", "专辑评论", "连麻Swimming", "雅痞", "川渝说唱"]
+tags: ["中文说唱", "音乐评论", "连麻Swimming"]
 image: /assets/img/posts/2023-04/yuppie-cover.jpg
 ---
 

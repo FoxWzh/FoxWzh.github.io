@@ -2,7 +2,7 @@
 title: "Imagen 4 和 Firefly：给企业用的生图"
 date: 2025-07-28 21:00:00 +0800
 categories: [AI PM, 图像生成]
-tags: [Imagen, Firefly, 企业合规, IP版权, 生图]
+tags: ["图像生成"]
 ---
 
 > 当法务部门开始参与AI工具选型，Imagen和Firefly就从"候选项"变成了"唯一选项"——它们的核心价值不是图像有多漂亮，而是用得多放心。

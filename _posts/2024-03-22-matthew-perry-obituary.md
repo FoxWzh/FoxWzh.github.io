@@ -2,7 +2,7 @@
 title: "Matthew Perry改变美国人说话的方式"
 date: 2024-03-22 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-03/matthew-perry.png
 ---
 

@@ -2,7 +2,7 @@
 title: "用模型来评估模型，可靠吗"
 date: 2026-04-19 20:00:00 +0800
 categories: [AI PM, LLMOps]
-tags: ["LLM-as-Judge", "评估", "偏差", "GPT-4o", "eval"]
+tags: ["评测", "模型对比"]
 ---
 **LLM-as-Judge是解决AI质量评估规模化难题的核心技术——但如果不了解它的系统性偏差，你可能正在被一个有偏见的裁判欺骗。**
 

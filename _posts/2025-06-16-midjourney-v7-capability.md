@@ -2,7 +2,7 @@
 title: "Midjourney v7 能做什么，不能做什么"
 date: 2025-06-16 21:00:00 +0800
 categories: [AI PM, 图像生成]
-tags: [Midjourney, v7, 图像生成, 审美, AI绘画]
+tags: ["图像生成"]
 ---
 
 > Midjourney 从来不是要做最听话的图像生成工具，v7 把这个策略推得更彻底——它宁可让图像好看，也不愿意让它完全按你说的生成。

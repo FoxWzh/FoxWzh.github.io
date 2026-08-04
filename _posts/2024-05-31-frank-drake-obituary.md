@@ -2,7 +2,7 @@
 title: "Frank Drake相信宇宙中一定还有其他智慧生物"
 date: 2024-05-31 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-05/frank-drake.png
 ---
 

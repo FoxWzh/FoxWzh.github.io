@@ -2,7 +2,7 @@
 title: "FLUX.1 为什么把 Stable Diffusion 挤掉了"
 date: 2025-06-05 21:00:00 +0800
 categories: [AI PM, 图像生成]
-tags: [FLUX.1, Black-Forest-Labs, 图像生成, 文字渲染]
+tags: ["图像生成", "文字渲染"]
 ---
 
 > FLUX.1 不是 Stable Diffusion 的升级版，而是同一批人换了架构重新造的东西——这个背景很重要，因为它解释了为什么很多 SD 用户换过来后感觉"不一样了"。

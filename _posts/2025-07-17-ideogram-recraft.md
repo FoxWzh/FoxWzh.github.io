@@ -2,7 +2,7 @@
 title: "Ideogram 和 Recraft：把文字画准了"
 date: 2025-07-17 21:00:00 +0800
 categories: [AI PM, 图像生成]
-tags: [Ideogram, Recraft, 文字渲染, 图像生成, 设计工具]
+tags: ["图像生成", "文字渲染"]
 ---
 
 > 文字渲染曾是AI图像生成的最大硬伤，Ideogram和Recraft用截然不同的方式把它变成了自己的核心竞争力。

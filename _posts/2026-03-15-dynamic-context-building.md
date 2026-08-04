@@ -2,7 +2,7 @@
 title: "怎么动态地组装 Context"
 date: 2026-03-15 20:00:00 +0800
 categories: [AI PM, Context Engineering]
-tags: ["动态Context", "RAG", "信息装配", "用户画像", "Agent"]
+tags: ["上下文工程", "RAG", "Agent"]
 ---
 **静态prompt是AI产品的"幼稚园"阶段——真正有竞争力的AI产品，依靠动态context构建实现千人千面的智能信息装配。**
 

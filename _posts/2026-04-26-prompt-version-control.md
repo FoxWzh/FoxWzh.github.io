@@ -2,7 +2,7 @@
 title: "Prompt 怎么做版本管理和 A/B 测试"
 date: 2026-04-26 20:00:00 +0800
 categories: [AI PM, LLMOps]
-tags: ["Prompt管理", "A/B测试", "版本控制", "Promptfoo", "LLMOps"]
+tags: ["提示词", "LLMOps"]
 ---
 **Prompt 是 AI 产品最核心的业务逻辑之一，没有版本管理的 Prompt 改动就是在没有安全带的情况下开车——也许大多数时候没问题，但一旦出事就是事故。**
 

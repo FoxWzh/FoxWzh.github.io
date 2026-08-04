@@ -2,7 +2,7 @@
 title: "让 Agent 自己学会写 Skill"
 date: 2026-05-27 00:01:00 +0800
 categories: [巨人肩膀, Microsoft]
-tags: ["SkillOpt", "Agent", "Skill", "提示词优化", "Microsoft"]
+tags: ["提示词", "Agent"]
 source_title: "SkillOpt: Executive Strategy for Self-Evolving Agent Skills"
 source_author: "Yifan Yang et al."
 source_url: "https://arxiv.org/pdf/2605.23904"

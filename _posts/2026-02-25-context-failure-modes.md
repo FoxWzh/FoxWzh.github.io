@@ -2,7 +2,7 @@
 title: "Context 会怎么失效"
 date: 2026-02-25 20:00:00 +0800
 categories: [AI PM, Context Engineering]
-tags: ["Context失效", "Lost in the Middle", "Context污染", "RAG", "长上下文"]
+tags: ["上下文工程", "RAG"]
 ---
 **Context失效是AI产品质量下降的头号隐形杀手——理解四种失效模式，是AI PM设计可靠产品的前提。**
 

@@ -2,7 +2,7 @@
 title: "LMArena Elo 能信多少"
 date: 2025-12-25 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
-tags: ["LMArena", "Elo评分", "人类偏好", "Chatbot Arena", "模型选型"]
+tags: ["基准测试", "模型选型"]
 ---
 **一句话摘要：** LMArena的Elo评分是目前最接近"用户真实感受"的模型排名，但它的样本偏差决定了它不能简单等号于你的产品用户会怎么选。
 

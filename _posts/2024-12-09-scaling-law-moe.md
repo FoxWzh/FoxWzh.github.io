@@ -2,7 +2,7 @@
 title: "Scaling Law 和 MoE：大模型怎么变聪明的"
 date: 2024-12-09 21:00:00 +0800
 categories: [AI PM, LLM基础]
-tags: [scaling-law, MoE, 混合专家, DeepSeek, 架构]
+tags: ["模型对比", "国产模型"]
 ---
 
 > 一句话摘要：大模型的竞争已经从"谁的参数多"变成"谁的架构更聪明"——MoE 是这场转变的核心，读完你能看懂为什么 DeepSeek 能用更低成本打败更贵的对手。

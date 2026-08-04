@@ -2,7 +2,7 @@
 title: "Anthropic 和 OpenAI 的迭代逻辑：从工程博客看他们在解什么问题"
 date: 2026-04-20 10:00:00 +0800
 categories: [巨人肩膀, Anthropic]
-tags: ["Claude Code", "Codex", "Agent", "Managed Agents", "OpenAI", "eval", "安全", "harness"]
+tags: ["Claude Code", "Agent", "OpenAI", "评测", "LLMOps"]
 source_title: "Anthropic Engineering Blog & OpenAI Blog 2024-2026"
 source_author: "Anthropic Engineering / OpenAI"
 source_date: "2026-04"

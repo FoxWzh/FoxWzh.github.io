@@ -2,7 +2,7 @@
 title: "BFCL v4 在测什么"
 date: 2025-12-15 20:00:00 +0800
 categories: [AI PM, Benchmark评测]
-tags: ["BFCL", "工具调用", "Function Calling", "Agent", "评测"]
+tags: ["工具调用", "Agent", "评测"]
 ---
 **一句话摘要：** BFCL是目前最权威的工具调用能力评测基准，v4版本覆盖了真实Agent场景中的大多数复杂调用模式，但高分模型在实际部署中仍可能翻车。
 

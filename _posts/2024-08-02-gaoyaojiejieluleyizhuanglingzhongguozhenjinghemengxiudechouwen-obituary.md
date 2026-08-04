@@ -2,7 +2,7 @@
 title: "高耀洁揭露了一桩令中国震惊和蒙羞的丑闻"
 date: 2024-08-02 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-08/gaoyaojiejieluleyizhuanglingzhongguozhenjinghemengxiudechouwen.png
 ---
 

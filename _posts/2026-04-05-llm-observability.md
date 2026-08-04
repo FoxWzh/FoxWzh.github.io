@@ -2,7 +2,7 @@
 title: "LLM Observability：怎么知道生产里的模型在做什么"
 date: 2026-04-05 20:00:00 +0800
 categories: [AI PM, LLMOps]
-tags: ["LLMOps", "可观测性", "监控", "Langfuse", "Helicone"]
+tags: ["LLMOps"]
 ---
 **在生产环境中，没有可观测性的AI产品就是一个黑盒——你无法知道它在哪里出了错、为什么出错、以及什么时候会再次出错。**
 

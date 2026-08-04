@@ -2,7 +2,7 @@
 title: "Shane Warne相信板球应始终充满乐趣"
 date: 2024-07-12 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-07/shane-warne.png
 ---
 

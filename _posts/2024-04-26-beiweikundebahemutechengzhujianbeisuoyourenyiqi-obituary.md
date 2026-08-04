@@ -2,7 +2,7 @@
 title: "被围困的巴赫穆特城逐渐被所有人遗弃"
 date: 2024-04-26 12:00:00 +0800
 categories: [翻译, 经济学人讣告]
-tags: ["经济学人", "讣告", "翻译", "英语学习"]
+tags: ["讣告翻译"]
 image: /assets/img/posts/2024-04/beiweikundebahemutechengzhujianbeisuoyourenyiqi.png
 ---
 

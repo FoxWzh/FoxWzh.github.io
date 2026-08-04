@@ -2,7 +2,7 @@
 title: "什么是 Context Engineering"
 date: 2026-02-15 20:00:00 +0800
 categories: [AI PM, Context Engineering]
-tags: ["Context Engineering", "RAG", "Agent", "信息管理", "AI工程"]
+tags: ["上下文工程", "RAG", "Agent", "评测"]
 ---
 **Context Engineering 不是 Prompt Engineering 的升级版，而是一个维度跃迁——从优化单次对话的措辞，到管理 AI 系统在整个任务生命周期中接收和处理的全部信息流。**
 

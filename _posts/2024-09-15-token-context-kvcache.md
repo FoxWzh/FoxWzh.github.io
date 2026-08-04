@@ -2,7 +2,7 @@
 title: "Token、Context Window、KV Cache 是什么"
 date: 2024-09-15 21:30:00 +0800
 categories: [AI PM, LLM基础]
-tags: [token, context-window, kv-cache, 产品经理, llm]
+tags: ["上下文工程", "产品经理", "模型对比"]
 ---
 
 > 一句话摘要：这三个概念决定了你的 AI 产品能有多聪明、多快、多贵——读完你能在需求评审里说清楚为什么"加长上下文"不是免费的。
