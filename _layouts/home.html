@@ -50,7 +50,7 @@ layout: default
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-    <article class="card-wrapper card">
+    <article class="card-wrapper card{% if post.pin %} pinned{% endif %}">
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
@@ -96,7 +96,10 @@ layout: default
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
+            <h1 class="card-title my-2 mt-md-0">
+              {% if post.pin %}<span class="pinned-badge">置顶</span>{% endif %}
+              {{ post.title }}
+            </h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-summary.html %}</p>
@@ -120,12 +123,6 @@ layout: default
                 {% endif %}
               </div>
 
-              {% if post.pin %}
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-                </div>
-              {% endif %}
             </div>
             <!-- .post-meta -->
           </div>

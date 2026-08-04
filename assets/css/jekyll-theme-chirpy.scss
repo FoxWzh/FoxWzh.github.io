@@ -145,3 +145,28 @@ html[data-mode="light"] .sidebar-about-inner {
   --card-bg: rgba(0, 0, 0, 0.02);
   --home-hero-border: rgba(0, 0, 0, 0.07);
 }
+
+/* ================= 置顶卡片 ================= */
+#post-list .card.pinned {
+  border: 1px solid var(--link-color, rgba(120, 150, 255, 0.55));
+  background: color-mix(in srgb, var(--card-bg) 82%, var(--link-color) 18%);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--link-color) 12%, transparent);
+}
+
+#post-list .card.pinned:hover {
+  border-color: var(--link-color);
+}
+
+.pinned-badge {
+  display: inline-block;
+  margin-right: 0.55rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.5;
+  vertical-align: 0.12em;
+  color: var(--link-color);
+  background: color-mix(in srgb, var(--link-color) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--link-color) 38%, transparent);
+}
