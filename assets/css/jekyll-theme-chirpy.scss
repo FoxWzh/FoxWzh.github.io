@@ -1,0 +1,142 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ================= 首页 Hero ================= */
+.home-hero {
+  margin: 1.5rem 0 2rem;
+  border-radius: 0.75rem;
+  padding: 2.25rem 1.75rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--home-hero-grad-a, rgba(80, 120, 255, 0.18)),
+    var(--home-hero-grad-b, rgba(180, 90, 255, 0.12)) 55%,
+    transparent
+  );
+  border: 1px solid var(--home-hero-border, rgba(255, 255, 255, 0.08));
+}
+
+.home-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero h1 {
+  margin: 0 0 0.35rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.home-hero-tagline {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.home-hero-desc {
+  margin: 0 0 1.25rem;
+  max-width: 46rem;
+  line-height: 1.75;
+  opacity: 0.75;
+}
+
+.home-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.home-hero-links a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed var(--link-color, currentColor);
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.home-hero-links a:hover {
+  opacity: 0.65;
+}
+
+.home-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+@media (max-width: 767px) {
+  .home-hero {
+    margin-top: 1rem;
+    padding: 1.75rem 1.25rem;
+  }
+
+  .home-hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ================= 侧栏迷你介绍 ================= */
+.sidebar-about {
+  margin-bottom: 1rem;
+}
+
+.sidebar-about-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--home-hero-border, rgba(255, 255, 255, 0.08));
+  background: var(--card-bg, rgba(255, 255, 255, 0.03));
+}
+
+.sidebar-about-avatar {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-about-text {
+  min-width: 0;
+}
+
+.sidebar-about-name {
+  margin: 0 0 0.15rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.sidebar-about-bio {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.65;
+  line-height: 1.4;
+}
+
+/* ================= 亮色模式微调 ================= */
+html[data-mode="light"] .home-hero {
+  --home-hero-grad-a: rgba(60, 100, 230, 0.10);
+  --home-hero-grad-b: rgba(160, 80, 230, 0.07);
+  --home-hero-border: rgba(0, 0, 0, 0.07);
+}
+
+html[data-mode="light"] .sidebar-about-inner {
+  --card-bg: rgba(0, 0, 0, 0.02);
+  --home-hero-border: rgba(0, 0, 0, 0.07);
+}

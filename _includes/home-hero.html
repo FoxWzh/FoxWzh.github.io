@@ -1,0 +1,25 @@
+{% assign post_count = site.posts | size %}
+{% assign music_count = site.categories['音乐'] | size %}
+{% assign trans_count = site.categories['翻译'] | size %}
+
+<section class="home-hero" aria-label="博客简介">
+  <div class="home-hero-inner">
+    <h1>{{ site.title }}</h1>
+    <p class="home-hero-tagline">{{ site.tagline }}</p>
+    <p class="home-hero-desc">
+      在 token 之海里乱逛，哪里有好玩的新模型、新论文、新产品就往哪里游。
+      游完了写点东西，算是给自己留个记录。
+    </p>
+    <div class="home-hero-links">
+      <a href="{{ '/archives/' | relative_url }}">全部文章</a>
+      <a href="{{ '/categories/' | relative_url }}">分类</a>
+      <a href="{{ '/tags/' | relative_url }}">标签</a>
+      <a href="{{ '/about/' | relative_url }}">关于</a>
+    </div>
+    <div class="home-hero-stats">
+      <span>{{ post_count }} 篇文章</span>
+      <span>{{ trans_count }} 篇讣告翻译</span>
+      <span>{{ music_count }} 篇音乐评论</span>
+    </div>
+  </div>
+</section>

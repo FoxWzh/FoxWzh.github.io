@@ -4,6 +4,7 @@ date: 2026-07-31 12:00:00 +0800
 categories: [音乐]
 tags: ["中文说唱", "音乐评论", "SASIOVERLXRD"]
 image: /assets/img/posts/2026-08/hegui-cover.jpg
+pin: true
 ---
 
 《赫鬼》从 7 月 27 号上线那天就开始听，循环到现在，想记一下。

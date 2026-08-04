@@ -4,6 +4,7 @@ date: 2023-04-10 12:00:00 +0800
 categories: [音乐]
 tags: ["中文说唱", "音乐评论", "连麻Swimming"]
 image: /assets/img/posts/2023-04/yuppie-cover.jpg
+pin: true
 ---
 
 把《雅痞》又翻出来听了，想记一下为什么这张对我这么重要。
