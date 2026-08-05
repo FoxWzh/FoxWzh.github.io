@@ -1,0 +1,132 @@
+---
+layout: none
+title: 训练集无图模式
+permalink: /training/no-image/
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>训练集筛选（无图片模式）</title>
+    <link rel="stylesheet" href="{{ '/assets/css/training.css' | relative_url }}" />
+  </head>
+  <body class="training-page">
+    <main class="training-shell">
+      <aside class="sidebar">
+        <section class="sidebar-section">
+          <h2>训练集筛选</h2>
+          <p>便捷高效筛选，快速锁定最优训练素材。</p>
+          <div class="tag-group">
+            <span class="tag active">角色</span>
+            <span class="tag">风格</span>
+            <span class="tag">场景</span>
+            <span class="tag">动作</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag active">二次元角色</span>
+            <span class="tag">写真风</span>
+            <span class="tag">街拍</span>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>训练模型</h2>
+          <div class="model-list">
+            <article class="model-card active">
+              <strong>flux1 krea dev</strong>
+              <span>角色塑形、皮肤纹理表现优秀</span>
+            </article>
+            <article class="model-card">
+              <strong>infinity 2.0</strong>
+              <span>整体氛围感更强、擅长夜景</span>
+            </article>
+            <article class="model-card">
+              <strong>美术写实 v4</strong>
+              <span>写实风格写意兼备</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>筛选参数</h2>
+          <div class="control-group">
+            <span class="control-chip active">全部</span>
+            <span class="control-chip">已筛选</span>
+            <span class="control-chip">有瑕疵</span>
+          </div>
+          <div class="control-group">
+            <span class="control-chip active">高清</span>
+            <span class="control-chip">普通</span>
+            <span class="control-chip">低清</span>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button class="secondary-button" type="button">导入筛选规则</button>
+          <button class="primary-button" type="button">一键筛选，cost:300</button>
+        </div>
+      </aside>
+
+      <section class="training-main">
+        <header>
+          <div>
+            <h1>无图模式</h1>
+            <p class="subtitle">支持批量导入素材，自动识别优质训练图像。</p>
+          </div>
+          <div class="training-actions">
+            <span class="cost">预计消耗：300 credits</span>
+            <div class="grouped-buttons">
+              <button class="secondary-button" type="button">导入列表</button>
+              <button class="secondary-button" type="button">清空</button>
+            </div>
+          </div>
+        </header>
+
+        <div class="dropzone">
+          <div>
+            <strong>点击上传图片</strong>
+            <small>单次上传5000张内，尺寸支持256×2048之间，支持webp、JPG、PNG</small>
+          </div>
+        </div>
+
+        <div class="preview-strip">
+          <div class="preview-slot">占位</div>
+          <div class="preview-slot">占位</div>
+          <div class="preview-slot filled">AI 自动补全</div>
+          <div class="preview-slot">占位</div>
+          <div class="preview-slot">占位</div>
+          <div class="preview-slot">占位</div>
+          <div class="preview-slot">占位</div>
+        </div>
+
+        <section class="quality-panel">
+          <div class="rating-bars">
+            <span class="rating-label">BAD</span>
+            <div class="range-wrapper">
+              <input type="range" min="0" max="100" value="15" disabled />
+            </div>
+            <span class="rating-label">GOOD</span>
+            <div class="range-wrapper">
+              <input type="range" min="0" max="100" value="65" disabled />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>
+              image count
+              <input type="text" value="0" readonly />
+            </label>
+            <label>
+              average quality
+              <input type="text" value="--" readonly />
+            </label>
+            <label>
+              enter name
+              <input type="text" placeholder="刘诗诗" />
+            </label>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
